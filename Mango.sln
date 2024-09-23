@@ -11,17 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8C000AAC-DD5D-4893-843F-D3CAD113BFAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthApi", "Mango.Services.AuthApi\Mango.Services.AuthApi.csproj", "{1BB602DD-423E-4838-8BBA-E2B87924BA83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthApi", "Mango.Services.AuthApi\Mango.Services.AuthApi.csproj", "{1BB602DD-423E-4838-8BBA-E2B87924BA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.CouponApi", "Mango.Services.CouponApi\Mango.Services.CouponApi.csproj", "{D0C1B592-A646-4961-8A61-9F9E144F6967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponApi", "Mango.Services.CouponApi\Mango.Services.CouponApi.csproj", "{D0C1B592-A646-4961-8A61-9F9E144F6967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.EmailApi", "Mango.Services.EmailApi\Mango.Services.EmailApi.csproj", "{AB223116-889C-4EB5-9941-0022437EB0EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.EmailApi", "Mango.Services.EmailApi\Mango.Services.EmailApi.csproj", "{AB223116-889C-4EB5-9941-0022437EB0EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ProductApi", "Mango.Services.ProductApi\Mango.Services.ProductApi.csproj", "{9B94DDDA-B852-4FEE-99E1-BD9E9A9B20D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.ProductApi", "Mango.Services.ProductApi\Mango.Services.ProductApi.csproj", "{9B94DDDA-B852-4FEE-99E1-BD9E9A9B20D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ShoppingCartApi", "Mango.Services.ShoppingCartApi\Mango.Services.ShoppingCartApi.csproj", "{945D9B63-2A47-489B-9021-2B822EC57539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.ShoppingCartApi", "Mango.Services.ShoppingCartApi\Mango.Services.ShoppingCartApi.csproj", "{945D9B63-2A47-489B-9021-2B822EC57539}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{27765F10-280E-4D7F-A85C-A85487BD2037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{D7B13DA0-0D18-48F1-8EFA-B0EC8746D553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,10 @@ Global
 		{945D9B63-2A47-489B-9021-2B822EC57539}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{945D9B63-2A47-489B-9021-2B822EC57539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{945D9B63-2A47-489B-9021-2B822EC57539}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27765F10-280E-4D7F-A85C-A85487BD2037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27765F10-280E-4D7F-A85C-A85487BD2037}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27765F10-280E-4D7F-A85C-A85487BD2037}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27765F10-280E-4D7F-A85C-A85487BD2037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B13DA0-0D18-48F1-8EFA-B0EC8746D553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B13DA0-0D18-48F1-8EFA-B0EC8746D553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B13DA0-0D18-48F1-8EFA-B0EC8746D553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B13DA0-0D18-48F1-8EFA-B0EC8746D553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,7 +63,7 @@ Global
 		{AB223116-889C-4EB5-9941-0022437EB0EC} = {8C000AAC-DD5D-4893-843F-D3CAD113BFAD}
 		{9B94DDDA-B852-4FEE-99E1-BD9E9A9B20D1} = {8C000AAC-DD5D-4893-843F-D3CAD113BFAD}
 		{945D9B63-2A47-489B-9021-2B822EC57539} = {8C000AAC-DD5D-4893-843F-D3CAD113BFAD}
-		{27765F10-280E-4D7F-A85C-A85487BD2037} = {35C28CC9-FD2E-4FE4-B6D0-DD0D26EEBD19}
+		{D7B13DA0-0D18-48F1-8EFA-B0EC8746D553} = {35C28CC9-FD2E-4FE4-B6D0-DD0D26EEBD19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {517E8BE4-1AFD-40BE-8366-1339A591C080}

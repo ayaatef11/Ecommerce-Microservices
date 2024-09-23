@@ -30,3 +30,4 @@ C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.AuthApi\obj\Debug\net8
 C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.AuthApi\obj\Debug\net8.0\Mango.Services.AuthApi.pdb
 C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.AuthApi\obj\Debug\net8.0\Mango.Services.AuthApi.genruntimeconfig.cache
 C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.AuthApi\obj\Debug\net8.0\ref\Mango.Services.AuthApi.dll
+C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.AuthApi\obj\Debug\net8.0\Mango.Services.AuthApi.sourcelink.json
