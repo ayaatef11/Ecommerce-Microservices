@@ -1,4 +1,5 @@
 ﻿using Mango.Web.DTOS;
+using Mango.Web.DTOS.Coupons;
 
 namespace Mango.Web.Interfaces.Services
 {

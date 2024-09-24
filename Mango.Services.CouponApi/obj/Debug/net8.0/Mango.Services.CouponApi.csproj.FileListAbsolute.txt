@@ -170,3 +170,4 @@ C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.CouponApi\obj\Debug\ne
 C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.CouponApi\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.CouponApi\bin\Debug\net8.0\Mapster.dll
 C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.CouponApi\bin\Debug\net8.0\Mapster.Core.dll
+C:\Users\Aya Atef\Source\Repos\Mango\Mango\Mango.Services.CouponApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -2,6 +2,7 @@
 using Mango.Services.CouponApi.DTOS;
 using Mango.Services.CouponApi.Models;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ namespace Mango.Services.CouponApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class CouponsController(CouponContext cop) : ControllerBase
     {
         //crud operations
@@ -30,6 +32,7 @@ namespace Mango.Services.CouponApi.Controllers
         }
 
         [HttpPost]
+       // [Authorize(Roles ="ADMIN")]
         public ActionResult< CouponDto> Post([FromBody]CouponDto coupon)
         {
             var coupone=coupon.Adapt<Coupon>();//means turn it to coupon

@@ -1,13 +1,16 @@
 ﻿using Mango.Web.Utility;
 using Microsoft.AspNetCore.Mvc;
+using static Mango.Web.Utility.SD;
 
 namespace Mango.Web.DTOS
 {
     public class RequestDto
     {
-        public SD.ApiType ApiType { get; set; } = SD.ApiType.GET;
+        public ApiType ApiType { get; set; } = ApiType.GET;
         public string Url { get; set; }
         public object Data { get; set; }
-        public string AccessToken { get; set;  }
+        public string AccessToken { get; set; }
+
+        public ContentType ContentType { get; set; } = ContentType.Json;
     }
 }

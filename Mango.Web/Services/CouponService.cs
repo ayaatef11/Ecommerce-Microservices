@@ -1,4 +1,5 @@
 ﻿using Mango.Web.DTOS;
+using Mango.Web.DTOS.Coupons;
 using Mango.Web.Interfaces.Services;
 using Mango.Web.Utility;
 using Microsoft.AspNetCore.Server.Kestrel.Core.Features;
@@ -13,7 +14,7 @@ namespace Mango.Web.Services
             {
                 ApiType = SD.ApiType.POST,
                 Data=couponDto,
-                Url = SD.CouponApiBase + "/api/Coupons"
+                Url = SD.CouponAPIBase + "/api/Coupons"
             });
         }
 
@@ -22,7 +23,7 @@ namespace Mango.Web.Services
             return baseService.SendAsync(new RequestDto
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.CouponApiBase + "/api/Coupons/"+id
+                Url = SD.CouponAPIBase + "/api/Coupons/"+id
             });
         }
 
@@ -31,7 +32,7 @@ namespace Mango.Web.Services
             return baseService.SendAsync(new RequestDto
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.CouponApiBase + "/api/Coupons"
+                Url = SD.CouponAPIBase + "/api/Coupons"
             });
         }
 
@@ -40,7 +41,7 @@ namespace Mango.Web.Services
             return baseService.SendAsync(new RequestDto
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.CouponApiBase + "/api/Coupons/"+id
+                Url = SD.CouponAPIBase + "/api/Coupons/"+id
             });
         }
 
@@ -50,7 +51,7 @@ namespace Mango.Web.Services
             {
                 ApiType = SD.ApiType.PUT,
                 Data=couponDto,
-                Url = SD.CouponApiBase + "/api/Coupons"
+                Url = SD.CouponAPIBase + "/api/Coupons"
             });
         }
     }
