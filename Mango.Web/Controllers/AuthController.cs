@@ -1,5 +1,4 @@
 ﻿using Mango.Web.DTOS.Auth;
-using Mango.Web.Interfaces.Services;
 using Mango.Web.Utility;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
@@ -9,6 +8,7 @@ using Newtonsoft.Json;
 using System.Security.Claims;
 using Mango.Web.DTOS;
 using System.IdentityModel.Tokens.Jwt;
+using Mango.Web.Interfaces.Services.Auth;
 
 namespace Mango.Web.Controllers
 {

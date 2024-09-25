@@ -1,5 +1,9 @@
 using Mango.Web.Interfaces.Services;
+using Mango.Web.Interfaces.Services.Auth;
+using Mango.Web.Interfaces.Services.Coupons;
 using Mango.Web.Services;
+using Mango.Web.Services.Auth;
+using Mango.Web.Services.Coupons;
 using Mango.Web.Utility;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
@@ -14,7 +18,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<ICouponService, CouponService>();
 //register an httpclient for the authservice
-//builder.Services.AddHttpClient<IAuthService, AuthService>();
+builder.Services.AddHttpClient<IAuthService, AuthService>();
 SD.CouponAPIBase = builder.Configuration["ServiceUrls:CouponAPI"];
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
 builder.Services.AddScoped<IAuthService, AuthService>();

@@ -11,10 +11,11 @@ namespace Mango.Services.CouponApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class CouponsController(CouponContext cop) : ControllerBase
     {
         //crud operations
+        [HttpGet]
         public List<CouponDto> GetCoupons()
         {
             var coupons = cop.Coupones.ToList();

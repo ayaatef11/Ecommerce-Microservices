@@ -1,6 +1,6 @@
 ﻿using Mango.Web.DTOS;
 using Mango.Web.DTOS.Coupons;
-using Mango.Web.Interfaces.Services;
+using Mango.Web.Interfaces.Services.Coupons;
 using Mango.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -18,7 +18,7 @@ namespace Mango.Web.Controllers
 
             //if (response != null && response.IsSuccess)
 
-            //list = JsonConvert.DeserializeObject<List<CouponDto>>(Convert.ToString(response.Result));
+            list = JsonConvert.DeserializeObject<List<CouponDto>>(Convert.ToString(response.Result));
             if (response == null || response.IsSuccess == false) TempData["error"] = response?.Message;
             else TempData["success"] = response?.Message;
 			return View(response.Result);

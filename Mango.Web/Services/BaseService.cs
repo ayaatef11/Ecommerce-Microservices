@@ -1,6 +1,7 @@
 ﻿using Mango.Web.DTOS;
 using Mango.Web.DTOS.Coupons;
 using Mango.Web.Interfaces.Services;
+using Mango.Web.Interfaces.Services.Auth;
 using Newtonsoft.Json;
 using System.Net;
 using System.Net.Http;
@@ -37,8 +38,10 @@ namespace Mango.Web.Services
                 }
 
                 message.RequestUri = new Uri(requestDto.Url);
+                // which is used when the request needs to send a mix of
+                // files and form fields (often for file uploads)
 
-                if (requestDto.ContentType == ContentType.MultipartFormData)
+                if (requestDto.ContentType == ContentType.MultipartFormData)//contains all the file and text data
                 {
                     var content = new MultipartFormDataContent();
 
@@ -47,7 +50,7 @@ namespace Mango.Web.Services
                         var value = prop.GetValue(requestDto.Data);
                         if (value is FormFile)
                         {
-                            var file = (FormFile)value;
+                            FormFile file = (FormFile)value;
                             if (file != null)
                             {
                                 content.Add(new StreamContent(file.OpenReadStream()), prop.Name, file.FileName);
@@ -67,9 +70,6 @@ namespace Mango.Web.Services
                         message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                     }
                 }
-
-
-
 
 
                 HttpResponseMessage? apiResponse = null;
@@ -104,8 +104,8 @@ namespace Mango.Web.Services
                         return new() { IsSuccess = false, Message = "Internal Server Error" };
                     default:
                         var apiContent = await apiResponse.Content.ReadAsStringAsync();
-                        var apiResponseDto = JsonConvert.DeserializeObject<ResponseDto>(apiContent);
-                        return apiResponseDto;
+                        var apiResponseDto = JsonConvert.DeserializeObject<List<ResponseDto>>(apiContent);
+                        return apiResponseDto[0];
                 }
             }
             catch (Exception ex)
