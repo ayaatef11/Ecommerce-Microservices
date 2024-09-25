@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "IdentityModel/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/IdentityModel.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.IdentityModel.Abstractions/8.0.2": {
         "type": "package",
         "compile": {
@@ -96,6 +109,31 @@
     }
   },
   "libraries": {
+    "IdentityModel/7.0.0": {
+      "sha512": "to99aLL5Gev1GOb2gUao/UZXT/uXMyjEmHPNrf/vJI2HBD1LMCTeC4SBCe/cqMIB12V9v+eSieq7ff0lju9pOQ==",
+      "type": "package",
+      "path": "identitymodel/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.jpg",
+        "identitymodel.7.0.0.nupkg.sha512",
+        "identitymodel.nuspec",
+        "lib/net462/IdentityModel.dll",
+        "lib/net462/IdentityModel.pdb",
+        "lib/net462/IdentityModel.xml",
+        "lib/net472/IdentityModel.dll",
+        "lib/net472/IdentityModel.pdb",
+        "lib/net472/IdentityModel.xml",
+        "lib/net6.0/IdentityModel.dll",
+        "lib/net6.0/IdentityModel.pdb",
+        "lib/net6.0/IdentityModel.xml",
+        "lib/netstandard2.0/IdentityModel.dll",
+        "lib/netstandard2.0/IdentityModel.pdb",
+        "lib/netstandard2.0/IdentityModel.xml"
+      ]
+    },
     "Microsoft.IdentityModel.Abstractions/8.0.2": {
       "sha512": "m73Bun0l0jL8rceWZ9TMD4hwQCjDIaRT1s5RMN7TBDpXu8Ea8KcRndo45btW9gG0i/USmHLCmOBIITvTA4Y6PA==",
       "type": "package",
@@ -239,6 +277,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "IdentityModel >= 7.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "System.IdentityModel.Tokens.Jwt >= 8.0.2"
     ]
@@ -289,6 +328,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "IdentityModel": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"

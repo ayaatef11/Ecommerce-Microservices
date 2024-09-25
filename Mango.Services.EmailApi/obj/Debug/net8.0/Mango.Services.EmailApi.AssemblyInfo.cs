@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mango.Services.EmailApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+670d8a1f51597b55b27c12732029691e534f5155")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0df59bbc1c398393e98640e03f63fb7b7f852ead")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mango.Services.EmailApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mango.Services.EmailApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
