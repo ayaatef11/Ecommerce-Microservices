@@ -23,10 +23,6 @@
 - [Database Design](#database-design)
 - [API Endpoints](#api-endpoints)
 - [Getting Started](#getting-started)
-- [API Documentation](#api-documentation)
-- [Message Bus Integration](#message-bus-integration)
-- [Payments](#payments)
-- [Contributing](#contributing)
 
 ---
 
