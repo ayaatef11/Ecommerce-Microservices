@@ -99,5 +99,5 @@ Each service exposes a clear set of RESTful endpoints. Documentation is availabl
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/your-username/ecommerce-microservices.git
-   cd ecommerce-microservices
+   git clone https://github.com/ayaatef11/Ecommerce-Microservices.git
+   cd Ecommerce-Microservices
