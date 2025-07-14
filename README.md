@@ -65,8 +65,10 @@ This e-commerce platform is designed using a **Microservices Architecture**, all
 
 Each microservice has its own isolated database schema.
 
-![db1](./assets/db1.png)
-![db2](./assets/db2.png)
+![db1](./assets/01.png)
+![db2](./assets/02.png)
+![db2](./assets/03.png)
+![db2](./assets/04.png)
 
 ---
 
