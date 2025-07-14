@@ -76,8 +76,12 @@ Each microservice has its own isolated database schema.
 
 Each service exposes a clear set of RESTful endpoints. Documentation is available via Swagger.
 
-![endpoints](./assets/api1.png)
-![endpoints](./assets/api2.png)
+![endpoints](./assets/05.png)
+![endpoints](./assets/06.png)
+![endpoints](./assets/07.png)
+![endpoints](./assets/08.png)
+![endpoints](./assets/09.png)
+![endpoints](./assets/010.png)
 
 ---
 
